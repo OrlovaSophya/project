@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'CormorantSC',Bold, sans-serif;
+    font-size: 16px;
+    color:rgb(29, 67, 46);
+  }
+  
+  footer{
+    background:rgb(244, 245, 227);
+    padding-top: 50px;
+  }
+  
+  
+  .footer__content {
+      width: 33.3%;
+  }
+  
+  h4{
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+  }
+  
+  .footer__content p{
+      width: 190px;
+      margin: auto;
+      padding: 7px;
+  }
+  
+  .footer__content ul{
+      text-align: center;
+  }
+  .footer {
+      display: flex;
+  }
+  
+  
+  
+  .social-icons {
+      text-align: center;
+      padding: 0;
+  }
+  
+  .social-icons li{
+      display: inline-block;
+      text-align: center;
+      padding: 5px;
+  }
+  
+  .social-icons i{
+      color:rgb(29, 67, 46);
+      font-size: 25px;
+  }
+  
+  a{
+      text-decoration: none;
+  }
+  
+  a:hover{
+      color:  rgb(29, 67, 46) ;
+  }
+  
+  .social-icons i:hover{
+      color:rgb(41, 203, 114) ;
+  }
+  
+  .bottom-bar{
+      background: rgb(29, 67, 46);
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+  }
+  
+  .bottom-bar p{
+      color:rgb(244, 245, 227);
+      margin: 0;
+      font-size: 16px;
+      padding: 7px;
+  }
+  
+  .form__button {
+      background:rgb(244, 245, 227);
+      padding: 3px;
+      transition: background-color 0.3s;
+      border: 2px solid rgb(29, 67, 46);
+      border-radius: 5px;
+  
+  }
+  
+    .form__button:hover {
+      background-color: rgb(29, 67, 46);
+    }
