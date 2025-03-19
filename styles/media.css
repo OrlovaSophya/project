@@ -1,0 +1,13 @@
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .news_card {
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+}

@@ -13,14 +13,21 @@
     color: rgb(29, 67, 46); 
     text-decoration: none; 
    }   
-   .header__button{ 
-    display: inline-block; 
-     padding: 10px; 
-     margin: 5px; 
-     background-color: rgb(244, 245, 227); 
-     color: rgb(29, 67, 46); 
-     text-decoration: none; 
-    }     
+     
+    .header__button{   
+    width: 80px; 
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(244, 245, 227);
+    color: rgb(29, 67, 46);
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 2px solid  rgb(29, 67, 46);
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
    .header__title{ 
     font-size: 500%;
     margin: 10; 
