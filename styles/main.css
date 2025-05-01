@@ -49,35 +49,25 @@ display: flex;
     font-weight: 1000;
   }
 
-   .news__link{
+  .news__link{
     display: block;
     color: #1b472dea;
     padding: 14px 20px;
     text-decoration: none;
     transition: background-color 0.3s;
-    border: 2px solid rgb(41, 203, 114) ;
+    border: 2px solid rgb#9de5be ;
     border-radius: 5px;
   }
-   
   .news__link:hover {
-    background-color: rgb(41, 203, 114) ;
+    background-color: #235c3bea;
   }
 
-
-  .news__title {
-    font-size: 30px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+  .about {
+    position: relative;
   }
+  
 
-  .news__left {
-    background-color: transparent;
-    border: none;
-  }
 
-  .news__right {
-    background-color: transparent;
-    border: none;
-  }
+
+
 

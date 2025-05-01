@@ -11,7 +11,7 @@
 <body> 
     <header class="header container">  
         <a class="header__Logo-warp" hrew="index.html"> 
-            <img class="header__Logo" src="images/Logo2.png" alt="Logo2.png" width="150"> 
+            <img class="header__Logo" src="js/images/Logo2.png" alt="Logo2.png" width="150"> 
             <h1 class="header__title">ORLOVSKY BATHS</h1> 
         </a> 
     
@@ -23,13 +23,13 @@
                     <a class="menu__link" href="index.html">Главная</a> 
                 </li> 
                 <li class="menu__item"> 
-                    <a class="menu__link" href="notes.html"> Каталог Услуг </a> 
+                    <a class="menu__link" href="catalog.html"> Каталог Услуг </a> 
                 </li> 
                 <li class="menu__item"> 
-                    <a class="menu__link" href="catalog.html"> Записи</a> 
+                    <a class="menu__link" href="records.html"> Записи</a> 
                 </li> 
                 <li class="menu__item"> 
-                    <a class="menu__link" href="favourites.html"> Личный кабинет</a> 
+                    <a class="menu__link" href="personal account.html"> Личный кабинет</a> 
                 </li> 
             </u1> 
         </nav> 
@@ -37,37 +37,75 @@
     <main class="main container"> 
 
         <div class="about">
-            <img class="about__image" src="images/complex.jpg" alt="Фото">
+            <img class="about__image" src="js/images/complex.jpg" alt="Фото">
             <div class="about__inner">
                 <p class="about__text">Устали от городской суеты? Подарите себе настоящий отдых в нашем банном комплексе! 
                     Парящий пар, уютные комнаты отдыха, профессиональный массаж и вкуснейшие блюда в нашем кафе – все для вашего комфорта и релаксации.
                     Забудьте о стрессе и наполнитесь энергией! Забронируйте свою сауну или русскую баню уже сегодня!</p>
             </div>
         </div>
-
-
-
-        <div class="news"> 
-            <h2 class="news__title"> Наши услуги </h2> 
-            <div class="news__card"> 
-                <img class="news__image" src="images/hamam.jpg" alt="" width="300"> 
-                <p class="news__subtitle">Хамам</p> 
-                <p class="news__desc">краткое описание</p> 
-                <a class="news__link" href="#"> Читать дальше</a> 
-                <div class="news_card"> 
-                    <img class="news__image" src="images/sauna.jpg" alt="" width="300"> 
-                <p class="news__subtitle">Сауна</p> 
-                <p class="news__desc">краткое описание</p> 
-                <a class="news__link" href="#"> Читать дальше</a> 
-                <div class="news__card"> 
-                    <img class="news__image" src="images/saline.jpg" alt="" width="300"> 
-                    <p class="news__subtitle">Солевая</p> 
-                    <p class="news__desc">краткое описание</p> 
-                    <a class="news__link" href="#"> Читать дальше</a> 
-
-            </div> 
-        </div> 
     </main>
+
+    <section class="images">
+        <ul class="images__list"></ul>
+    </section>
+
+    <div class="news">
+        <h3 class="news__title">Наши услуги</h3>
+        <div class="news__wrap">
+            <button class="news__left">
+                <img src="js/images/left1.png" alt="Влево" class="news__left-swiper" width="60">
+            </button>
+            <div class="news__card">
+                <img class="news__image" src="js/images/hamam.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Хамам</p>
+                <p class="news__desc">Окунитесь в восточную сказку нашего хамама: мягкий пар, мрамор, 
+                    пилинг и расслабляющий массаж для полного обновления души и тела.</p>
+                <button class="news__link" data-id="1"> Читать дальше</button>
+            </div>
+            <div class="news__card">
+                <img class="news__image" src="js/images/sauna.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Сауна</p>
+                <p class="news__desc">Раскаленный жар, березовый веник, прохладный бассейн:
+                     финская сауна – ваш путь к очищению, расслаблению и бодрости.</p>
+                <button class="news__link"  data-id="2"> Читать дальше</button>
+            </div>
+            <div class="news__card">
+                <img class="news__image" src="js/images/saline.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Солевая комната</p>
+                <p class="news__desc">Дышите здоровьем! Соляная пещера: целебный микроклимат, 
+                    насыщение ионами, укрепление иммунитета и расслабление для всей семьи.</p>
+                <button class="news__link" data-id="3">Читать дальше</button>
+            </div>
+            <div class="news__card">
+                <img class="news__image" src="js/images/bathhouse.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Русская травяная баня</p>
+                <p class="news__desc">Русская травяная баня: ароматные травы, мягкий пар, 
+                    глубокое расслабление, очищение кожи и оздоровление дыхательных путей.</p>
+                <button class="news__link" data-id="4"> Читать дальше</button>
+            </div>
+            <div class="news__card">
+                <img class="news__image" src="js/images/swimming pool.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Бассейн</p>
+                <p class="news__desc">Освежающий бассейн: кристально чистая вода, гидромассаж,
+                     релакс после сауны, бани и хамама, заряд бодрости и отличное настроение!</p>
+                <button class="news__link" data-id="5"> Читать дальше</button>
+            </div>
+            <div class="news__card">
+                <img class="news__image" src="js/images/font.jpg" alt="Фото" width="200">
+                <p class="news__subtitle">Купель</p>
+                <p class="news__desc">Контрастная купель: ледяная бодрость после парной,
+                     укрепление иммунитета, тонус сосудов и невероятный прилив энергии.</p>
+                <button class="news__link" data-id="6"> Читать дальше</button>
+            </div>
+
+            <button class="news__right">
+                <img src="js/images/right1.png" alt="Вправо" class="news__right-swiper" width="60">
+            </button>
+            </div> 
+    </main>
+
+
     <footer class="container">
     <div class="footer  container"> 
         <div class="footer__content">
