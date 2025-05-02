@@ -104,4 +104,37 @@ if (newsContainer) {
     });
 }
 
+//Динамический вывод навигационного меню
+const headerMenu = document.querySelector('.header__menu');
+if (headerMenu){
+    const headerList = headerMenu.querySelector('.header__list');
+    const menuData = {
+        link1: {
+            link:'index.html',
+            title: 'Главная',
+        },
+        link2: {
+            link:'catalog.html',
+            title: 'Каталог',
+        },
+        link3: {
+            link:'records.html',
+            title: 'Записи',
+        },
+        link4: {
+            link:'personal account.html',
+            title: 'Личный кабинет',
+        },
+    }
+    const createLink = (UrlLink, title) =>{
+        const link = `<li class="header__item"><a class="header__link" href="${UrlLink}">${title}</a></li>`;
+        return link;
+    }
+    for (const linkItem in menuData) {
+        const link = menuData[linkItem];
+        const linkIndex = createLink(link.link, link.title);
+        headerList.insertAdjacentHTML('beforeend', linkIndex);
+    }
+}
+
 

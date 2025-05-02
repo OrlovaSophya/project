@@ -1,3 +1,4 @@
+
 .menu { 
     margin: 0; 
     padding: 0; 
@@ -32,6 +33,7 @@
     font-size: 500%;
     margin: 10; 
    } 
+   
    .header{ 
     display: flex; 
     flex-wrap: wrap; 
@@ -44,4 +46,33 @@
     width: 100%; 
     flex-shrink: 0; 
    }
+   .header {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    background:  #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+
+.header__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+.header__link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(244, 245, 227);
+    color: rgb(29, 67, 46);
+    text-decoration: none;
+}   
+
 
