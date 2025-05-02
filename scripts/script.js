@@ -22,6 +22,33 @@ intensiveImg.addEventListener('mouseenter', () => {
 
 });
 
+// Модальное окно
+    const news__link = document.querySelectorAll(".news__link");
+    // news__link.addEventListener('click', () => {
+    //     console.log ("Нажали на кнопку Читать дальше");
+    // })
+    news__link.forEach((item, index) => {
+
+        item.addEventListener('click', () => {
+            const dataid = item.dataset.id;
+            const modalApplication = document.querySelector(".applications[data-id='" + dataid + "']")
+            modalApplication.removeAttribute("hidden")
+        
+// Закрытие модального окна
+            window.addEventListener("click", (event) => {
+                if (event.target === modalApplication) {
+                    modalApplication.setAttribute("hidden", true)
+                }
+            });
+
+            const closeModalButton = modalApplication.querySelector(".application__close");
+            closeModalButton.addEventListener("click", () => {
+                modalApplication.setAttribute("hidden", true);
+            });
+        });
+    });
+
+
 // Создание слайдера
 let currentIndex = 0; 
 const slider = document.querySelectorAll(".news__card");
@@ -59,4 +86,22 @@ function updateSlider() {
         }
     });
 }
+
+// Массивы
+const newsContainer = document.querySelector (".news");
+if (newsContainer) {
+    const dataTitleNews= [
+        "Хамам",
+        "Сауна",
+        "Солевая комната",
+        "Русская травяная баня",
+        "Бассейн",
+        "Купель",
+    ];
+    const titleNews = newsContainer.querySelectorAll(".news__subtitle");
+    titleNews.forEach((item, index) => {
+        item.textContent = dataTitleNews[index];
+    });
+}
+
 

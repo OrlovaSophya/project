@@ -65,7 +65,112 @@ display: flex;
   .about {
     position: relative;
   }
+  .about__inner {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  }
+  .about__image {
+    background-image: url('js/images/Logo2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .news__title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .news__left {
+    background-color: transparent;
+    border: none;
+    
+  }
+
+  .news__right {
+    background-color: transparent;
+    border: none;
+   
+  }
+
   
+  .applications {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(158, 201, 176) ;
+}
+.application {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    max-width: 800px;
+    width: 100%;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 64px;
+    background-color: #c6f6dc ;
+    color:  #1b472dea;
+    height: 100vh;
+    overflow-y: auto;
+}
+.application__title {
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.application__text {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.application__wrap{
+    display: block;
+    height: 97%;
+   
+}
+
+.application__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    color: #1b472dea;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 2px solid #1b472dea;
+    border-radius: 5px;
+    background-color: #c6f6dc;
+  }
+   
+  .application__close:hover {
+    background-color: #235c3bea;
+  }
+
+.news__image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; 
+}
+
 
 
 
