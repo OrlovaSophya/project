@@ -216,6 +216,13 @@ if (preloader && content) {
     }, 3000); // Задержка 3 секунды
 }
 
+//Карусель
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+  
 
 
 
