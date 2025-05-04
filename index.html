@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
 </head> 
 <body> 
+    <div class="preloader">
+        <div class="loader">
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+            <span class="dot3"></span>
+        </div>
+        Загрузка...
+    </div>
+
+    <div class="content">
+
     <header class="header container">  
         <nav class="header__menu">
             <ul class="header__list">
@@ -65,18 +76,17 @@
         </div>
     </main>
 
-    <section class="images">
-        <ul class="images__list"></ul>
-    </section>
-
      <div class="news">
         <h3 class="news__title">Наши услуги</h3>
         <div class="news__wrap">
             <button class="news__left">
                 <img src="js/images/left1.png" alt="Влево" class="news__left-swiper" width="60">
             </button>
+
          <div class="news__card">
-                <img class="news__image" src="js/images/hamam.jpg" alt="Хамам" width="200">
+            <section class="images">
+                <ul class="images__list"></ul>
+            </section>    
                 <p class="news__subtitle">Услуга 1</p>
                 <p class="news__desc">Окунитесь в восточную сказку нашего хамама: мягкий пар, мрамор, 
                     пилинг и расслабляющий массаж для полного обновления души и тела.</p>

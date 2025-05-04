@@ -171,6 +171,52 @@ display: flex;
     object-fit: cover; 
 }
 
+ntent {
+  display: none;
+}
+
+.preloader {
+  padding-top: 25%; 
+  background: #c6f6dc; 
+  transition: opacity 0.5s ease; 
+  text-align: center;
+  height: 100vh;
+}
+
+.loader span {
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 100%;
+background-color: #235c3bea;
+margin: 35px 5px;
+}
+.dot1 {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.dot2{
+  animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+.dot3 {
+  animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+/* Анимация bounce: */
+@keyframes bounce {
+  0%,
+  75%,
+  100% {
+      transform: translateY(0);
+ }
+
+  25% {
+     transform: translateY(-30px);
+ }
+}
+
+
 
 
 
