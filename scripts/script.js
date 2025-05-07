@@ -198,7 +198,6 @@ if (pictures) {
 
 });
 
-    }
     // предзагрузчик
 const preloader = document.querySelector(".preloader");
 const content = document.querySelector(".content");
@@ -222,6 +221,7 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
     },
   });
+}
   
 
 

@@ -1,10 +1,11 @@
 
 [
     {
-        "imageUrl": [
+        "imageUrl":[
             "js/images/hamam.jpg",
             "js/images/hamam1.jpg"
-        ],
+        ], 
+        
         "imageAlt": "Фото",
         "imageWight": 200
     }
